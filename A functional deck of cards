@@ -1,0 +1,2 @@
+let buildDeck = ['ace', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'jack', 'queen', 'king'].reduce((desk,rank) => [...desk,...['clubs', 'diamonds', 'hearts', 'spades'].map(suit => `${rank} of ${suit}`)], []);
+console.log(buildDeck);
